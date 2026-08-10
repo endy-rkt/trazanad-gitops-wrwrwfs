@@ -1,13 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: dev-service
+  name: p3-svc
   namespace: dev
 spec:
   selector:
-    app: app-dev
+    app: p3-app
   ports:
   - protocol: TCP
     port: 8888
     targetPort: 8888
-    
